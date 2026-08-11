@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>แบบฟอร์มบันทึกข้อมูลกำลังพลและยานพาหนะ</title>
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<div class="topbar">
+  <h1>แบบฟอร์มบันทึกข้อมูลกำลังพลและยานพาหนะ</h1>
+</div>
+
+<div class="container">
+  <div id="alertBox"></div>
+
+  <form id="registrationForm">
+    <div class="card">
+      <h2>ข้อมูลส่วนบุคคล</h2>
+      <div class="form-row">
+        <div>
+          <label for="rank">ยศ *</label>
+          <select id="rank" required>
+            <option value="">-- เลือกยศ --</option>
+            <option value="ส.ต.">ส.ต.</option>
+            <option value="ส.ท.">ส.ท.</option>
+            <option value="ส.อ.">ส.อ.</option>
+            <option value="จ.ส.ต.">จ.ส.ต.</option>
+            <option value="จ.ส.ท.">จ.ส.ท.</option>
+            <option value="จ.ส.อ.">จ.ส.อ.</option>
+            <option value="ร.ต.">ร.ต.</option>
+            <option value="ร.ท.">ร.ท.</option>
+            <option value="ร.อ.">ร.อ.</option>
+          </select>
+        </div>
+        <div>
+          <label for="firstName">ชื่อ *</label>
+          <input type="text" id="firstName" required />
+        </div>
+        <div>
+          <label for="lastName">นามสกุล *</label>
+          <input type="text" id="lastName" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <label for="unit">หน่วยสังกัด *</label>
+          <input type="text" id="unit" required />
+        </div>
+        <div>
+          <label for="phone">เบอร์โทร *</label>
+          <input type="tel" id="phone" required placeholder="0812345678" />
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>รถยนต์</h2>
+      <div class="form-row">
+        <div>
+          <label for="carCount">จำนวนรถยนต์ (คัน)</label>
+          <input type="number" id="carCount" min="0" max="20" value="0" />
+        </div>
+      </div>
+      <div id="carContainer"></div>
+    </div>
+
+    <div class="card">
+      <h2>รถจักรยานยนต์</h2>
+      <div class="form-row">
+        <div>
+          <label for="motoCount">จำนวนรถจักรยานยนต์ (คัน)</label>
+          <input type="number" id="motoCount" min="0" max="20" value="0" />
+        </div>
+      </div>
+      <div id="motoContainer"></div>
+    </div>
+
+    <div class="actions-row">
+      <button type="submit" class="btn-primary" id="submitBtn">บันทึกข้อมูล</button>
+      <button type="reset" class="btn-secondary" id="resetBtn">ล้างข้อมูล</button>
+    </div>
+  </form>
+
+  <p class="muted" style="margin-top:24px;">
+    <a href="admin/login.html">สำหรับเจ้าหน้าที่: เข้าสู่ระบบเพื่อดูข้อมูล</a>
+  </p>
+</div>
+
+<script src="assets/config.js"></script>
+<script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ข้อมูลกำลังพลและยานพาหนะ</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+
+<div class="topbar">
+  <h1>ข้อมูลกำลังพลและยานพาหนะ</h1>
+  <div>
+    <span id="whoami" class="muted" style="color:#fff; margin-right:14px;"></span>
+    <button id="logoutBtn" class="btn-secondary btn-small">ออกจากระบบ</button>
+  </div>
+</div>
+
+<div class="container">
+  <div id="alertBox"></div>
+
+  <div class="card">
+    <h2>รายชื่อทั้งหมด</h2>
+    <div id="tableWrap" class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ยศ</th>
+            <th>ชื่อ-นามสกุล</th>
+            <th>หน่วยสังกัด</th>
+            <th>เบอร์โทร</th>
+            <th>รถยนต์</th>
+            <th>จักรยานยนต์</th>
+            <th>วันที่บันทึก</th>
+            <th>จัดการ</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr><td colspan="8">กำลังโหลดข้อมูล...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card hidden" id="detailCard">
+    <h2>รายละเอียด</h2>
+    <div id="detailContent"></div>
+  </div>
+</div>
+
+<script src="../assets/config.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

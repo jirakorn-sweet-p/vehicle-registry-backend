@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>เข้าสู่ระบบผู้ดูแล</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+
+<div class="topbar">
+  <h1>ระบบดูข้อมูลกำลังพลและยานพาหนะ</h1>
+  <a class="login-link" href="../index.html">กลับหน้าฟอร์ม</a>
+</div>
+
+<div class="container">
+  <div class="login-wrap card">
+    <h2>เข้าสู่ระบบผู้ดูแล</h2>
+    <div id="alertBox"></div>
+    <form id="loginForm">
+      <label for="username">ชื่อผู้ใช้</label>
+      <input type="text" id="username" required style="margin-bottom:14px;" />
+      <label for="password">รหัสผ่าน</label>
+      <input type="password" id="password" required style="margin-bottom:20px;" />
+      <button type="submit" class="btn-primary" id="loginBtn" style="width:100%;">เข้าสู่ระบบ</button>
+    </form>
+  </div>
+</div>
+
+<script src="../assets/config.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
